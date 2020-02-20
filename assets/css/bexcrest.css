@@ -1,0 +1,33 @@
+body {
+    font-family: 'Europa', sans-serif;
+}
+.landing {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.navbar {
+    background-color: #4b4b4b;
+}
+
+.navbar a{
+    color: #fff;
+    transition: 0.2s;
+}
+
+.navbar .dropdown-menu {
+    background-color: #4b4b4b;
+}
+
+.navbar .dropdown-item:hover{
+    color: #4b4b4b;
+}
+
+.navbar a:hover {
+    color: #bbb;
+}
+
+.navbar-brand {
+    height: 4rem;
+    width:4rem;
+    color: #fff;
+}
