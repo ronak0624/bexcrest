@@ -1,25 +1,35 @@
+@import url("https://use.typekit.net/xbg7zzr.css");
+
+:root {
+    --primary-color: #4B4B4B;
+}
+
 body {
     font-family: 'Europa', sans-serif;
 }
-.landing {
+
+.landing,
+.testimonials,
+.architectural {
     max-width: 1280px;
     margin: 0 auto;
 }
+
 .navbar {
-    background-color: #4b4b4b;
+    background-color: var(--primary-color);
 }
 
-.navbar a{
+.navbar a {
     color: #fff;
     transition: 0.2s;
 }
 
 .navbar .dropdown-menu {
-    background-color: #4b4b4b;
+    background-color: var(--primary-color);
 }
 
-.navbar .dropdown-item:hover{
-    color: #4b4b4b;
+.navbar .dropdown-item:hover {
+    color: var(--primary-color);
 }
 
 .navbar a:hover {
@@ -28,6 +38,59 @@ body {
 
 .navbar-brand {
     height: 4rem;
-    width:4rem;
+    width: 4rem;
+    color: #fff;
+}
+
+.testimonials .card {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 1rem;
+    width: 100%;
+}
+
+.testimonials .card .card-text {
+    font-weight: lighter;
+}
+
+.contact-form {
+    max-width: 500px;
+}
+
+.contact-form h1 {
+    font-weight: bold;
+}
+
+.contact-form h5 {
+    font-weight: lighter;
+}
+
+.contact-form .input-group-text {
+    background-color: #fff;
+    border-right-color: #fff;
+}
+
+.contact-form input {
+    border-left: none;
+}
+
+.architectural button.service-dropdown{
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    border: none;
+    width: 100%;
+    color: #fff;
+    outline: none;
+}
+button.service-dropdown img{
+    /* margin-right: 4rem; */
+    display: inline-block;
+}
+
+.collapse .card,
+.collapsing .card {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0;
     color: #fff;
 }
