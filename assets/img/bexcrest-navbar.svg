@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="332.518" height="50" viewBox="0 0 332.518 50">
+    <defs>
+        <style>
+            .a,
+            .b,
+            .c {
+                fill: #fff;
+            }
+
+            .b {
+                font-size: 33px;
+                font-family: Europa-Regular;
+            }
+
+            .c {
+                font-size: 22px;
+                font-family: Europa-Light;
+                font-weight: 300;
+            }
+        </style>
+    </defs>
+    <g transform="translate(-268.002 -99)">
+        <g transform="translate(268 99)">
+            <rect class="a" width="1.308" height="38.988" transform="translate(13.892 10.947)" />
+            <rect class="a" width="1.308" height="23.152" transform="translate(30.387 0.133)" />
+            <rect class="a" width="1.308" height="23.286" transform="translate(60.378)" />
+            <rect class="a" width="1.308" height="38.988" transform="translate(76.846 10.947)" />
+            <rect class="a" width="90.244" height="1.308" transform="translate(1.03 43.989)" />
+            <rect class="a" width="10.408" height="19.617" transform="translate(30.387 24.552)" />
+            <rect class="a" width="10.405" height="19.617" transform="translate(51.278 24.552)" />
+            <rect class="a" width="12.839" height="8.236" transform="translate(39.748 36.407)" />
+            <rect class="a" width="10.484" height="1.654" transform="translate(40.795 24.552)" />
+            <rect class="a" width="1.573" height="10.201" transform="translate(45.257 26.206)" />
+            <rect class="a" width="1.308" height="4.431" transform="translate(30.455 45.569)" />
+            <rect class="a" width="1.308" height="4.588" transform="translate(60.294 45.389)" />
+            <rect class="a" width="53.975" height="1.416" transform="translate(0.002 31.37) rotate(-31.38)" />
+            <rect class="a" width="52.272" height="1.329" transform="translate(46.146 3.269) rotate(31.38)" />
+            <path class="a" d="M135.724,55.43,121.55,64.21H149.9Z" transform="translate(-89.739 -40.924)" />
+            <rect class="a" width="28.083" height="2.591" transform="translate(22.173 19.243) rotate(-31.38)" />
+            <rect class="a" width="28.083" height="2.591" transform="translate(45.946 4.623) rotate(31.38)" />
+            <rect class="a" width="55.004" height="1.308" transform="translate(18.558 24.464)" />
+            <rect class="a" width="10.994" height="1.308" transform="translate(40.664 30.627)" />
+            <rect class="a" width="2.881" height="0.919" transform="translate(39.494 27.212) rotate(-45)" />
+            <rect class="a" width="2.881" height="0.919" transform="translate(49.77 36.819) rotate(-45)" />
+            <rect class="a" width="2.881" height="0.919" transform="translate(51.805 27.78) rotate(-135)" />
+            <rect class="a" width="2.881" height="0.919" transform="translate(41.838 37.669) rotate(-135)" />
+            <rect class="a" width="6.003" height="3.329" transform="translate(54.691 8.869)" />
+        </g><text class="b" transform="translate(368.002 134)">
+            <tspan x="0" y="0">BEXCREST</tspan>
+        </text><text class="c" transform="translate(526.52 130)">
+            <tspan x="0" y="0">HOMES</tspan>
+        </text>
+    </g>
+</svg>
