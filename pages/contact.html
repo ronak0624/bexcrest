@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Contact</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,53 +10,106 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../assets/css/bexcrest.css">
 </head>
 
 <body>
-    <div class="container-fluid mt-5">
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/img/bexcrest.svg">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-5">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Services</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="/pages/services/pmanagement.html">Project Management Serivces</a>
+                        <a class="dropdown-item" href="/pages/services/architectural.html">Architectural Services</a>
+                        <a class="dropdown-item" href="/pages/services/contractor.html">Building Contractor</a>
+                        <a class="dropdown-item" href="/pages/services/notices.html">Notices & Agreements</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Case Studies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./testimonials.html">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
         <div class="contact">
             <div class="row">
                 <div class="col">
                     <div class="contact-form mx-auto">
                         <h1>Contact Us</h1>
                         <h5>Bexcrest Homes</h5>
-                        <h5>07886306505</h5>
-                        <h5>01372 841555</h5>
-                        <h5>BexcrestHomes@gmail.com</h5>
+                        <!-- Which number is what?-->
+                        <h5>
+                            <span>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </span>
+                            07886306505
+                        </h5>
+                        <h5>
+                            <span>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </span>
+                            01372 841555
+                        </h5>
+                        <h5>
+                            <span>
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </span>
+                            BexcrestHomes@gmail.com
+                        </h5>
                         <label class="sr-only" for="inlineFormInputGroup">Name</label>
-                        <div class="input-group mb-2">
+                        <div class="input-group mt-5">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
-                                    <img src="../assets/img/user.svg" alt="">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
                                 </div>
                             </div>
                             <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Name">
                         </div>
                         <label class="sr-only" for="inlineFormInputGroup">E-Mail</label>
-                        <div class="input-group mb-2">
+                        <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
-                                    <img src="../assets/img/user.svg" alt="">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
                                 </div>
                             </div>
                             <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="E-Mail">
                         </div>
                         <label class="sr-only" for="inlineFormInputGroup">Phone Number</label>
-                        <div class="input-group mb-2">
+                        <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
-                                    <img src="../assets/img/phone.svg" alt="">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Phone Number">
+                            <input type="text" class="form-control" id="inlineFormInputGroup"
+                                placeholder="Phone Number">
                         </div>
                         <label class="sr-only" for="inlineFormInputGroup">Address</label>
-                        <div class="input-group mb-2">
+                        <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
-                                    <img src="../assets/img/user.svg" alt="">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
                                 </div>
                             </div>
                             <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Address">
