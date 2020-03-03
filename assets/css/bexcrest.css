@@ -1,27 +1,50 @@
 @import url("https://use.typekit.net/xbg7zzr.css");
 
+
+/* Sitewide */
 :root {
     --primary-color: #4B4B4B;
 }
 
+*:focus {
+    outline: none !important;
+}
+
 body {
     font-family: 'Europa', sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color-faded)
 }
 
 .landing,
 .testimonials,
-.architectural {
-    max-width: 1280px;
+.portfolio {
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .navbar {
     background-color: var(--primary-color);
+    word-wrap: break-word;
 }
 
 .navbar a {
-    color: #fff;
+    color: #fff !important;
     transition: 0.2s;
+}
+
+.navbar a:hover{
+    cursor: pointer;
 }
 
 .navbar .dropdown-menu {
@@ -32,16 +55,59 @@ body {
     color: var(--primary-color);
 }
 
+.navbar .navbar-toggler {
+    color: #fff;
+    z-index: 5;
+}
+
 .navbar a:hover {
     color: #bbb;
 }
 
 .navbar-brand {
-    height: 4rem;
-    width: 4rem;
+    /* width: auto; */
+}
+
+.navbar-brand img {
+    width: 75%;
     color: #fff;
 }
 
+.btn-primary {
+    background-color: var(--primary-color);
+    outline: none;
+}
+
+
+/* Services Page */
+.services .service-picture {
+    width: 100%;
+}
+
+.services section {
+    height: 75vh;
+    margin-bottom: 5rem;
+}
+
+.services .container {
+    margin-top: 5rem;
+}
+
+.services img {
+    width: 100%;
+}
+
+.services .small-service {
+    margin-top: 50%;
+    /* transform: translateY(-50%); */
+}
+
+.services img.showcase {
+    vertical-align: middle;
+}
+
+
+/* Testimonials Page */
 .testimonials .card {
     background-color: var(--primary-color);
     color: #fff;
@@ -53,8 +119,16 @@ body {
     font-weight: lighter;
 }
 
+
+/* Contact Page */
+.form-control:focus {
+    outline: none;
+}
+
 .contact-form {
     max-width: 500px;
+    margin-top: 50%;
+    transform: translateY(-50%);
 }
 
 .contact-form h1 {
@@ -63,6 +137,17 @@ body {
 
 .contact-form h5 {
     font-weight: lighter;
+}
+
+.contact-form .input-group {
+    margin-bottom: 2rem;
+}
+
+.contact-form .input-group input,
+.contact-form .input-group-text {
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid var(--primary-color)
 }
 
 .contact-form .input-group-text {
@@ -74,16 +159,45 @@ body {
     border-left: none;
 }
 
-.architectural button.service-dropdown{
+.contact-form textarea {
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.google-map {
+    position: relative;
+    padding-bottom: 75%;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    height: 0;
+    overflow: hidden;
+}
+
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Service Page */
+.services button.service-dropdown {
     background-color: var(--primary-color);
     padding: 1.5rem;
     border: none;
     width: 100%;
     color: #fff;
     outline: none;
+    position: relative;
 }
-button.service-dropdown img{
-    /* margin-right: 4rem; */
+
+button.service-dropdown img {
+    right: 4rem;
+    top: 50%;
+    width: auto;
+    transform: translateY(-50%);
+    position: absolute;
     display: inline-block;
 }
 
@@ -93,4 +207,59 @@ button.service-dropdown img{
     border: none;
     border-radius: 0;
     color: #fff;
+}
+
+/* Portfolio Page */
+.portfolio .header {
+    border-bottom: 2px solid black;
+}
+
+.portfolio .header h1 {
+    font-weight: bold;
+}
+
+/* Portfolio gallery */
+.portfolio-gallery img {
+    width: 100%;
+    vertical-align: middle;
+    top: -50%;
+}
+
+.portfolio-gallery h3 {
+    position: absolute;
+    display: block;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.portfolio-gallery .col-md-4,
+.portfolio-gallery .col-md-8 {
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Small Breakpoint */
+@media (max-width: 768px) {
+    .contact-form {
+        margin-top: 0;
+        transform: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .navbar {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand {
+        width: 50vw;
+    }
 }

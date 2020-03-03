@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-sm">
         <a class="navbar-brand" href="#">
-            <img src="../assets/img/bexcrest.svg">
+            <img src="../assets/img/bexcrest-navbar.svg">
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,9 +53,10 @@
     </nav>
     <div class="container-fluid">
         <div class="contact">
-            <div class="row">
-                <div class="col">
+            <div class="row mt-5">
+                <div class="col-lg-6">
                     <div class="contact-form mx-auto">
+
                         <h1>Contact Us</h1>
                         <h5>Bexcrest Homes</h5>
                         <!-- Which number is what?-->
@@ -77,66 +78,64 @@
                             </span>
                             BexcrestHomes@gmail.com
                         </h5>
-                        <label class="sr-only" for="inlineFormInputGroup">Name</label>
+
+                        <label class="sr-only" for="name">Name</label>
                         <div class="input-group mt-5">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Name">
+                            <input type="text" class="form-control" id="name" placeholder="Name">
                         </div>
-                        <label class="sr-only" for="inlineFormInputGroup">E-Mail</label>
+
+                        <label class="sr-only" for="email">E-Mail</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="E-Mail">
+                            <input type="text" class="form-control" id="email" placeholder="E-Mail">
                         </div>
-                        <label class="sr-only" for="inlineFormInputGroup">Phone Number</label>
-                        <div class="input-group">
+                        <span class="text-danger form-valid d-none">E-Mail required</span>
+
+                        <label class="sr-only" for="phonenumber">Phone Number</label>
+                        <div class="input-group mt-3">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
                                     <i class="fa fa-phone" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <input type="text" class="form-control" id="inlineFormInputGroup"
-                                placeholder="Phone Number">
+                            <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number">
                         </div>
-                        <label class="sr-only" for="inlineFormInputGroup">Address</label>
-                        <div class="input-group">
+                        <span class="text-danger form-valid d-none">Phone Number required</span>
+
+                        <label class="sr-only" for="address">Address</label>
+                        <div class="input-group mt-3">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
                                     <i class="fa fa-home" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Address">
+                            <input type="text" class="form-control" id="address" placeholder="Address">
                         </div>
+
+                        <label class="sr-only" for="contactMessage">Message</label>
+                        <textarea name="message" id="contactMessage" class="w-100 mb-4" rows="5"
+                            placeholder="Message..."></textarea>
+                        <button class="btn btn-primary w-100" onclick="submitContact()" type="submit">Submit</button>
+
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-6">
                     <div class="mapouter mx-auto">
-                        <div class="gmap_canvas"><iframe width="600" height="754" id="gmap_canvas"
+                        <div class="google-map">
+                            <iframe width="600" height="754" id="google-map"
                                 src="https://maps.google.com/maps?q=64%20High%20St%20Pinner&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                                href="https://www.embedgooglemap.org">embedgooglemap.org</a></div>
-                        <style>
-                            .mapouter {
-                                position: relative;
-                                text-align: right;
-                                height: 754px;
-                                width: 600px;
-                            }
-
-                            .gmap_canvas {
-                                overflow: hidden;
-                                background: none !important;
-                                height: 754px;
-                                width: 600px;
-                            }
-                        </style>
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,6 +152,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="../assets/js/bexcrest.js"></script>
 </body>
 
 </html>

@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-sm">
         <a class="navbar-brand" href="#">
-            <img src="assets/img/bexcrest.svg">
+            <img src="assets/img/bexcrest-navbar.svg">
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,35 +29,39 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Services</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Project Management Serivces</a>
-                        <a class="dropdown-item" href="/pages/services/architectural.html">Architectural Services</a>
-                        <a class="dropdown-item" href="#">Building Contractor</a>
-                        <a class="dropdown-item" href="#">Notices & Agreements</a>
+                    <div class="btn-group">
+                        <a class="nav-link" href="/pages/services.html">Services</a>
+                        <a class="dropdown-toggle dropdown-toggle-split nav-link pl-0" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"></a>
+                            <span class="sr-only">Toggle dropdown</span>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/pages/services.html#pm">Project Management Serivces</a>
+                                <a class="dropdown-item" href="/pages/services.html#arch">Architectural Services</a>
+                                <a class="dropdown-item" href="/pages/services.html#contractor">Building Contractor</a>
+                                <a class="dropdown-item" href="/pages/services.html#notices">Notices & Agreements</a>
+                            </div>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Case Studies</a>
+                    <a class="nav-link" href="./pages/portfolio.html">Case Studies</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/testimonials.html">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/contact.html">Contacts</a>
+                    <a class="nav-link" href="./pages/contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container-fluid">
         <div class="landing row">
-            <div class="col mt-5">
-                <div id="carouselId" class="carousel slide" data-ride="carousel">
+            <div class="col-md-6 mt-5">
+                <div id="homeCarousel" class="carousel slide mt-5" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselId" data-slide-to="1"></li>
-                        <li data-target="#carouselId" data-slide-to="2"></li>
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
@@ -70,17 +74,17 @@
                             <img src="https://source.unsplash.com/random/600x800" alt="Third slide">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md-6">
                 <div class="hero mx-auto mt-5">
                     <img src="assets/img/bexcrest.svg">
                     <h1 class="d-none">Bexcrest Homes</h1>
@@ -115,6 +119,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="assets/js/bexcrest.js"></script>
 </body>
 
 </html>
