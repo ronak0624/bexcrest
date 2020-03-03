@@ -226,7 +226,10 @@ button.service-dropdown img {
 }
 .portfolio .card-title {
     font-weight: bold;
-    margin-left: 2rem;
+    margin-left: 2.4rem;
+}
+.portfolio .card-text:nth-child(1) {
+    font-weight: lighter;
 }
 
 /* Portfolio gallery */
