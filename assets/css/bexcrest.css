@@ -84,9 +84,11 @@ a:hover {
 
 .landing .hero img {
     width: 75%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
-.landing .col-md-6 {
+.landing .col-xl-6 {
     padding: 0;
     max-height: 90vh;
 }
