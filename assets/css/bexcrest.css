@@ -42,7 +42,7 @@ a:hover {
     transition: 0.2s;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     cursor: pointer;
 }
 
@@ -79,8 +79,23 @@ a:hover {
 
 .landing .hero {
     background-color: #fff;
-    border: 4rem solid var(--primary-color);
     padding: 5rem;
+}
+
+.landing .col-md-6 {
+    padding: 0;
+    max-height: 90vh;
+}
+
+#homeCarousel {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#homeCarousel img {
+    position: relative;
+    margin-top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Services Page */
@@ -222,16 +237,18 @@ button.service-dropdown img {
     font-weight: bold;
 } */
 
-.portfolio .card{
+.portfolio .card {
     background-color: var(--primary-color);
     border: none;
     color: #fff;
     padding: 3rem;
 }
+
 .portfolio .card-title {
     font-weight: bold;
     margin-left: 2.4rem;
 }
+
 .portfolio .card-text:nth-child(1) {
     font-weight: lighter;
 }
@@ -271,7 +288,7 @@ button.service-dropdown img {
 }
 
 @media (min-width: 768px) {
-    .portfolio .card-header{
+    .portfolio .card-header {
         margin-top: 3rem;
     }
 }
@@ -281,9 +298,11 @@ button.service-dropdown img {
     .navbar {
         font-size: 0.8rem;
     }
+
     .portfolio .card {
         padding: 1rem;
     }
+
     .portfolio .card-body {
         padding-left: 0;
         padding-right: 0;
