@@ -11,67 +11,78 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/xbg7zzr.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bexcrest.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="#">
-            <img src="assets/img/bexcrest-navbar.svg">
+        <a class="navbar-brand" href="/index.html">
+            <img src="../../assets/img/bexcrest-navbar.svg">
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <svg class="close fs-sm d-none" width="1em" height="1em" viewBox="0 0 24 24" fill="#fff"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z">
+                </path>
+            </svg>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-5">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <div class="btn-group">
                         <a class="nav-link" href="/pages/services.html">Services</a>
                         <a class="dropdown-toggle dropdown-toggle-split nav-link pl-0" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false"></a>
-                            <span class="sr-only">Toggle dropdown</span>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="/pages/services.html#pm">Project Management Serivces</a>
-                                <a class="dropdown-item" href="/pages/services.html#arch">Architectural Services</a>
-                                <a class="dropdown-item" href="/pages/services.html#contractor">Building Contractor</a>
-                                <a class="dropdown-item" href="/pages/services.html#notices">Notices & Agreements</a>
-                            </div>
+                        <span class="sr-only">Toggle dropdown</span>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/pages/services.html#pm">Project Management Serivces</a>
+                            <a class="dropdown-item" href="/pages/services.html#arch">Architectural Services</a>
+                            <a class="dropdown-item" href="/pages/services.html#contractor">Building Contractor</a>
+                            <a class="dropdown-item" href="/pages/services.html#notices">Notices & Agreements</a>
+                        </div>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/portfolio.html">Case Studies</a>
+                    <a class="nav-link" href="/portfolio.html">Case Studies</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/testimonials.html">Testimonials</a>
+                    <a class="nav-link" href="/pages/testimonials.html">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/contact.html">Contact</a>
+                    <a class="nav-link" href="/pages/contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container-fluid">
         <div class="landing row">
-            <div class="col-md-6 mt-5">
-                <div id="homeCarousel" class="carousel slide mt-5" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#homeCarousel" data-slide-to="1"></li>
-                        <li data-target="#homeCarousel" data-slide-to="2"></li>
-                    </ol>
+            <div class="col-md-6">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img src="https://source.unsplash.com/random/600x800" alt="First slide">
+                            <img src="/assets/img/portfolio/thornhill/front.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://source.unsplash.com/random/600x800" alt="Second slide">
+                            <img src="/assets/img/portfolio/thornhill/kitchen-diner.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://source.unsplash.com/random/600x800" alt="Third slide">
+                            <img src="/assets/img/portfolio/thornhill/living-room.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/img/portfolio/anderson/AD 2.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/img/portfolio/thornhill/ensuite5.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/img/portfolio/thornhill/rear-garden.jpg" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
@@ -85,10 +96,10 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="hero mx-auto mt-5">
+                <div class="hero mx-auto">
                     <img src="assets/img/bexcrest.svg">
                     <h1 class="d-none">Bexcrest Homes</h1>
-                    <p class="lead mt-5">Established in 2002, Bexcrest Homes is a commercial and residential building
+                    <p class="lead">Established in 2002, Bexcrest Homes is a commercial and residential building
                         contractor
                         and property development business that has built a strong and reputable image based on
                         reliability,
