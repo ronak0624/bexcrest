@@ -26,7 +26,6 @@ a:hover {
     color: var(--primary-color-faded)
 }
 
-.landing,
 .testimonials,
 .portfolio {
     max-width: 1300px;
@@ -78,6 +77,11 @@ a:hover {
     outline: none;
 }
 
+.landing .hero {
+    background-color: #fff;
+    border: 4rem solid var(--primary-color);
+    padding: 5rem;
+}
 
 /* Services Page */
 .services .service-picture {
