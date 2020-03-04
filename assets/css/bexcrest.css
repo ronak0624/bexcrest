@@ -82,6 +82,10 @@ a:hover {
     padding: 5rem;
 }
 
+.landing .hero img {
+    width: 75%;
+}
+
 .landing .col-md-6 {
     padding: 0;
     max-height: 90vh;
@@ -94,6 +98,7 @@ a:hover {
 
 #homeCarousel img {
     position: relative;
+    height: 100%;
     margin-top: 50%;
     transform: translateY(-50%);
 }
