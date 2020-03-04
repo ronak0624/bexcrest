@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/xbg7zzr.css">
     <link rel="stylesheet" href="assets/css/bexcrest.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
 </head>
 
 <body>
@@ -61,8 +62,12 @@
             </ul>
         </div>
     </nav>
-    
+
     <div class="container portfolio mt-5">
+        <div class="row mb-5">
+            <h1 class="text-center">Case Studies</h1>
+            <hr />
+        </div>
         <div class="row">
             <div class="card mb-3 mx-auto">
                 <div class="row no-gutters">
@@ -266,12 +271,10 @@
                         <div id="thornhill-carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/portfolio/anderson/AD 1.jpg" class="d-block w-100"
-                                        alt="...">
+                                    <img src="assets/img/portfolio/anderson/AD 1.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/portfolio/anderson/AD 2.jpg" class="d-block w-100"
-                                        alt="...">
+                                    <img src="assets/img/portfolio/anderson/AD 2.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="assets/img/portfolio/anderson/AD 3.jpg" class="d-block w-100" alt="...">
@@ -494,8 +497,14 @@
             <div class="col-md-6"></div>
             <div class="col-md-6"></div>
         </div>
-        <div class="lightbox">
+        <div id="lightbox" class="d-none">
             <img src="assets/img/portfolio/thornhill/bathroom3.jpg" alt="">
+            <svg class="close fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="#fff"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z">
+                </path>
+            </svg>
         </div>
     </div>
 
@@ -509,7 +518,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="assets/js/bexcrest.js"></script>
-    <script src="assets/js/lightbox.js.js"></script>
+    <script src="assets/js/lightbox.js"></script>
 </body>
 
 </html>
