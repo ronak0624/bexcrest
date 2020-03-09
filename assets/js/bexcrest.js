@@ -33,7 +33,7 @@ function setColumnHeight() {
 
 $(document).ready(function() {
     setColumnHeight();
-    // $(".button.service-dropdown img").attr("data-toggled", "false");
+    
 });
 
 $(window).resize(function() {
