@@ -15,10 +15,11 @@ html{
 }
 
 body {
-    font-family: 'Europa', sans-serif;
+    font-family: 'Europa', 'Avenir Next', sans-serif;
     width: 100vw;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -30,6 +31,14 @@ a:hover {
     color: var(--primary-color-faded)
 }
 
+.mt-10 {
+    margin-top: 5rem !important;
+}
+
+.card {
+    border-radius: 0;
+}
+
 .testimonials,
 .portfolio {
     max-width: 1300px;
@@ -39,6 +48,11 @@ a:hover {
 .navbar {
     background-color: var(--primary-color);
     word-wrap: break-word;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
 }
 
 .navbar a {
@@ -67,10 +81,6 @@ a:hover {
     color: #bbb;
 }
 
-.navbar-brand {
-    /* width: auto; */
-}
-
 .navbar-brand img {
     width: 75%;
     color: #fff;
@@ -81,33 +91,63 @@ a:hover {
     outline: none;
 }
 
-.landing .hero {
-    background-color: #fff;
+/* Landing Page */
+.hero {
+    margin-left: 50%;
+    margin-top: 7rem;
+    transform: translateX(-50%);
     padding: 5rem;
+    width: 100%;
+    max-width: 1300px;
+    opacity: 1;
+    background-color: rgba(200,200,200,0.8);
 }
-
-.landing .hero img {
-    width: 75%;
+.hero img.logo{
+    max-width: 30rem;
     margin-left: 50%;
     transform: translateX(-50%);
+    margin-top: 4rem;
 }
 
-.landing .col-xl-6 {
-    padding: 0;
-    max-height: 90vh;
-}
-
-#homeCarousel {
+.hero-bg {
+    background-image: url("../img/portfolio/thornhill/front.jpg");
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0.6; */
+    width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
 }
 
-#homeCarousel img {
-    position: relative;
-    height: 100%;
-    margin-top: 50%;
-    transform: translateY(-50%);
+.hero .lead {
+    color: black;
 }
+
+.home-carousel {
+    height: 90vh;
+    width: 100vw;
+    margin-top: 0;
+    position: absolute;
+}
+
+/* .home-carousel .controls {
+    margin-top: 50%;
+}
+
+.home-carousel .left img{
+    transform: rotate(270deg);
+    position: absolute;
+    left: 1rem;
+}
+
+.home-carousel .right img{
+    transform: rotate(-270deg);
+    position: absolute;
+    right: 1rem;
+} */
 
 /* Services Page */
 .services .service-picture {
@@ -129,7 +169,6 @@ a:hover {
 
 .services .small-service {
     margin-top: 50%;
-    /* transform: translateY(-50%); */
 }
 
 .services img.showcase {
@@ -201,14 +240,6 @@ a:hover {
     transform: translate(-50%, -50%);
 }
 
-/* .google-map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-} */
-
 /* Service Page */
 .services button.service-dropdown {
     background-color: var(--primary-color);
@@ -236,15 +267,6 @@ button.service-dropdown img {
     border-radius: 0;
     color: #fff;
 }
-
-/* Portfolio Page */
-/* .portfolio .header {
-    border-bottom: 2px solid black;
-}
-
-.portfolio .header h1 {
-    font-weight: bold;
-} */
 
 .portfolio .card {
     background-color: var(--primary-color);
@@ -293,6 +315,12 @@ button.service-dropdown img {
 
     h1 {
         font-size: 2rem;
+    }
+    .hero {
+        padding: 2rem;
+    }
+    .hero .lead {
+        font-size: 0.8rem;
     }
 }
 
