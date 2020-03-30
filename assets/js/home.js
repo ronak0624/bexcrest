@@ -20,11 +20,11 @@ $(document).ready(function () {
 });
 
 function homeCarousel() {
-    let imageList = ["url('../assets/img/portfolio/thornhill/kitchen-diner.jpg')", 
-    "url('../assets/img/portfolio/thornhill/front.jpg')", 
-    "url('../assets/img/portfolio/thornhill/living-room.jpg')", 
-    "url('../assets/img/portfolio/rye/4.png')", 
-    "url('../assets/img/portfolio/rye/1.png')"];
+    let imageList = ["url('assets/img/portfolio/thornhill/kitchen-diner.jpg')", 
+    "url('assets/img/portfolio/thornhill/front.jpg')", 
+    "url('assets/img/portfolio/thornhill/living-room.jpg')", 
+    "url('assets/img/portfolio/rye/4.jpg')", 
+    "url('assets/img/portfolio/rye/1.jpg')"];
 
     let carousel = $(".hero-bg");
     let index = 1;
