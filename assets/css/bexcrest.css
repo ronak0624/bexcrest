@@ -149,34 +149,6 @@ a:hover {
     right: 1rem;
 } */
 
-/* Services Page */
-.services .service-picture {
-    width: 100%;
-}
-
-.services section {
-    height: 75vh;
-    margin-bottom: 5rem;
-}
-
-.services .container {
-    margin-top: 5rem;
-}
-
-.services img {
-    width: 100%;
-}
-
-.services .small-service {
-    margin-top: 50%;
-}
-
-.services img.showcase {
-    vertical-align: middle;
-    width: 100%;
-}
-
-
 /* Testimonials Page */
 .testimonials .card {
     background-color: var(--primary-color);
@@ -260,6 +232,10 @@ button.service-dropdown img {
     display: inline-block;
 }
 
+.service-dropdown span:nth-child(1) {
+    margin-right: 3rem;
+}
+
 .collapse .card,
 .collapsing .card {
     background-color: var(--primary-color);
@@ -267,6 +243,32 @@ button.service-dropdown img {
     border-radius: 0;
     color: #fff;
 }
+
+/* .services .service-picture {
+    width: 100%;
+} */
+
+.services section {
+    height: 75vh;
+    margin-bottom: 5rem;
+}
+
+.services .container {
+    margin-top: 5rem;
+}
+
+.services img {
+    width: 100%;
+}
+
+/* .services .small-service {
+    margin-top: 50%;
+}
+
+.services img.showcase {
+    vertical-align: middle;
+    width: 100%;
+} */
 
 .portfolio .card {
     background-color: var(--primary-color);
@@ -282,28 +284,6 @@ button.service-dropdown img {
 
 .portfolio .card-text:nth-child(1) {
     font-weight: lighter;
-}
-
-/* Portfolio gallery */
-.portfolio-gallery img {
-    width: 100%;
-    vertical-align: middle;
-    top: -50%;
-}
-
-.portfolio-gallery h3 {
-    position: absolute;
-    display: block;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    bottom: 1rem;
-    left: 1rem;
-}
-
-.portfolio-gallery .col-md-4,
-.portfolio-gallery .col-md-8 {
-    overflow: hidden;
-    text-align: center;
 }
 
 /* Small Breakpoint */
@@ -357,5 +337,21 @@ button.service-dropdown img {
 @media (max-width: 450px) {
     .navbar-brand {
         width: 50vw;
+    }
+    button.service-dropdown img {
+        right: 0.75rem;
+    }
+}
+
+@media (max-width: 538px) {
+    .service-dropdown {
+        font-size: 0.8rem;
+    }
+    .collapse,
+    .collapsing {
+        font-size: 0.8rem;
+    }
+    .service-dropdown span:nth-child(1) {
+        margin-right: 1rem;
     }
 }
