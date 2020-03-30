@@ -9,12 +9,12 @@
 
             .b {
                 font-size: 33px;
-                font-family: Europa-Regular;
+                font-family: Europa-Regular, sans-serif;
             }
 
             .c {
                 font-size: 22px;
-                font-family: Europa-Light;
+                font-family: Europa-Light, sans-serif;
                 font-weight: 300;
             }
         </style>
