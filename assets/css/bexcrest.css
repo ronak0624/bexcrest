@@ -261,6 +261,11 @@ button.service-dropdown img {
     width: 100%;
 }
 
+.services .header-carousel span:hover, 
+.services .header-carousel h1:hover{
+    cursor: pointer;
+}
+
 /* .services .small-service {
     margin-top: 50%;
 }
@@ -331,6 +336,9 @@ button.service-dropdown img {
     .portfolio .card-body {
         padding-left: 0;
         padding-right: 0;
+    }
+    .services .header-carousel span {
+        display: none;
     }
 }
 
