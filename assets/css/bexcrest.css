@@ -32,7 +32,7 @@ a:hover {
 }
 
 .mt-10 {
-    margin-top: 5rem;
+    margin-top: 5rem !important;
 }
 
 .card {
@@ -89,34 +89,6 @@ a:hover {
 .btn-primary {
     background-color: var(--primary-color);
     outline: none;
-}
-
-.landing .hero {
-    background-color: #fff;
-    padding: 5rem;
-}
-
-.landing .hero img {
-    width: 75%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.landing .col-xl-6 {
-    padding: 0;
-    max-height: 90vh;
-}
-
-#homeCarousel {
-    height: 100vh;
-    overflow: hidden;
-}
-
-#homeCarousel img {
-    position: relative;
-    height: 100%;
-    margin-top: 50%;
-    transform: translateY(-50%);
 }
 
 /* Landing Page */
