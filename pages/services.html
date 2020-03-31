@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
     <link rel="stylesheet" href="../assets/css/bexcrest.css">
 </head>
 
@@ -61,296 +66,336 @@
         </div>
     </nav>
 
-    <div class="services">
-        <section id="arch" class="container">
-            <div class="row py-3 header-carousel">
-                <span class="my-auto previous"></span>
-                <h1 class="mx-auto">Architectural Services</h1>
-                <span class="my-auto next">Demolition Services</span>
-            </div>
-            <div class="row">
-                <div class="col-lg-7">
-                    <p class="muted">Bexcrest Homes has developed a reliable network of professional and qualified
-                        architects
-                        who work on a variety of domestic and commercial projects throughout London and the Home
-                        Counties.
-                        We
-                        can offer an entire service package as detailed below or any component for your needs:</p>
+    <div class="services container">
+        <div class="headers px-4">
+            <span class="text-center">Architectural Services</span>
+            <span class="text-center">Notices & Agreements</span>
+            <span class="text-center">Building Contractor</span>
+            <span class="text-center">Project Management</span>
+            <span class="text-center">Landscaping Services</span>
+        </div>
+        <div class="content">
+            <section id="arch" class="container">
+                <div class="row py-3 header-carousel">
+                    <h1 class="mx-auto text-center">Architectural Services</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <p class="muted">Bexcrest Homes has developed a reliable network of professional and qualified
+                            architects
+                            who work on a variety of domestic and commercial projects throughout London and the Home
+                            Counties.
+                            We
+                            can offer an entire service package as detailed below or any component for your needs:</p>
 
-                    <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step1"
-                        aria-expanded="false" aria-controls="step1">
-                        <span>Step 1</span>
-                        <span>Initial Consultation</span>
-                        <img src="../assets/img/chevron-down.svg" alt="Down arrow">
-                    </button>
-                    <div class="collapse" id="step1">
-                        <div class="card card-body">
-                            <ul>
-                                <li>Free initial site meeting to discuss needs and requirements</li>
-                                <li>Our architects will highlight some initial design thoughts outline the range of our
-                                    services which might be suitable</li>
-                                <li>Go through anticipated timelines and associated costs</li>
-                            </ul>
+                        <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step1"
+                            aria-expanded="false" aria-controls="step1">
+                            <span>Step 1</span>
+                            <span>Initial Consultation</span>
+                            <img src="../assets/img/chevron-down.svg" alt="Down arrow">
+                        </button>
+                        <div class="collapse" id="step1">
+                            <div class="card card-body">
+                                <ul>
+                                    <li>Free initial site meeting to discuss needs and requirements</li>
+                                    <li>Our architects will highlight some initial design thoughts outline the range of
+                                        our
+                                        services which might be suitable</li>
+                                    <li>Go through anticipated timelines and associated costs</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step2"
+                            aria-expanded="false" aria-controls="step2">
+                            <span>Step 2</span>
+                            <span>Survey and design development</span>
+                            <img src="../assets/img/chevron-down.svg" alt="Down arrow">
+                        </button>
+                        <div class="collapse" id="step2">
+                            <div class="card card-body">
+                                <ul>
+                                    <li>After fee proposal agreement proceed to complete full survey of project site
+                                    </li>
+                                    <li>Development of design options for the project</li>
+                                    <li>Finally agreeing on the right design option</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step3"
+                            aria-expanded="false" aria-controls="step3">
+                            <span>Step 3</span>
+                            <span>Planning application</span>
+                            <img src="../assets/img/chevron-down.svg" alt="Down arrow">
+                        </button>
+                        <div class="collapse" id="step3">
+                            <div class="card card-body">
+                                <ul>
+                                    <li>Development of CAD design of agreed design option</li>
+                                    <li>Creation of drawings for submission to Local Planning Authority</li>
+                                    <li>Development of CGI graphics to enable visualisation of the project</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step4"
+                            aria-expanded="false" aria-controls="step4">
+                            <span>Step 4</span>
+                            <span>Building regulations application</span>
+                            <img src="../assets/img/chevron-down.svg" alt="Down arrow">
+                        </button>
+                        <div class="collapse" id="step4">
+                            <div class="card card-body">
+                                <ul>
+                                    <li>Following grant of planning permission prepare and submit application and
+                                        drawings
+                                        for Building Control approval prior to project commencement</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step5"
+                            aria-expanded="false" aria-controls="step5">
+                            <span>Step 5</span>
+                            <span>Detailed working drawings</span>
+                            <img src="../assets/img/chevron-down.svg" alt="Down arrow">
+                        </button>
+                        <div class="collapse" id="step5">
+                            <div class="card card-body">
+                                <ul>
+                                    <li>
+                                        Prior to, during or after Building Regulations approval has been granted, the
+                                        detailed working drawings for the project can be produce including all
+                                        structural
+                                        drawings.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step6"
+                            aria-expanded="false" aria-controls="step6">
+                            <span>Step 6</span>
+                            <span>Tender process & Contract administration</span>
+                            <img src="../assets/img/chevron-down.svg" alt="Down arrow">
+                        </button>
+                        <div class="collapse" id="step6">
+                            <div class="card card-body">
+                                <ul>
+                                    <li>
+                                        Prepare documents from our construction team for a detailed quotation.
+                                    </li>
+                                    <li>
+                                        Following selection of your contractor, we will inspect the works on site,
+                                        ensuring
+                                        that
+                                        they are undertaken to quality, to price, and to time.
+                                    </li>
+                                    <li>
+                                        At the end of the works obtain a certificate of completion from the local
+                                        authority
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-
-                    <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step2"
-                        aria-expanded="false" aria-controls="step2">
-                        <span>Step 2</span>
-                        <span>Survey and design development</span>
-                        <img src="../assets/img/chevron-down.svg" alt="Down arrow">
-                    </button>
-                    <div class="collapse" id="step2">
-                        <div class="card card-body">
-                            <ul>
-                                <li>After fee proposal agreement proceed to complete full survey of project site</li>
-                                <li>Development of design options for the project</li>
-                                <li>Finally agreeing on the right design option</li>
-                            </ul>
-                        </div>
+                    <div class="col-lg-5 d-flex align-items-center justify-content-center">
+                        <img class="showcase" src="../assets/img/architectural/architectural.png" alt="">
                     </div>
+            </section>
 
-                    <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step3"
-                        aria-expanded="false" aria-controls="step3">
-                        <span>Step 3</span>
-                        <span>Planning application</span>
-                        <img src="../assets/img/chevron-down.svg" alt="Down arrow">
-                    </button>
-                    <div class="collapse" id="step3">
-                        <div class="card card-body">
-                            <ul>
-                                <li>Development of CAD design of agreed design option</li>
-                                <li>Creation of drawings for submission to Local Planning Authority</li>
-                                <li>Development of CGI graphics to enable visualisation of the project</li>
-                            </ul>
-                        </div>
+            <section id="notices" class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="showcase" src="https://source.unsplash.com/random/600x800" alt="">
                     </div>
+                    <div class="col-lg-6">
+                        <div class="small-service">
+                            <h1>Notices & Agreements</h1>
+                            <p class="muted">Bexcrest Homes also offers our clients with Party Wall Agreements, Schedule
+                                of
+                                Conditions, Building and Demolition Notices, and assisting with all Utility Connections;
+                                Water, Gas,
+                                Electricity and Cable.
 
-                    <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step4"
-                        aria-expanded="false" aria-controls="step4">
-                        <span>Step 4</span>
-                        <span>Building regulations application</span>
-                        <img src="../assets/img/chevron-down.svg" alt="Down arrow">
-                    </button>
-                    <div class="collapse" id="step4">
-                        <div class="card card-body">
-                            <ul>
-                                <li>Following grant of planning permission prepare and submit application and drawings
-                                    for Building Control approval prior to project commencement</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step5"
-                        aria-expanded="false" aria-controls="step5">
-                        <span>Step 5</span>
-                        <span>Detailed working drawings</span>
-                        <img src="../assets/img/chevron-down.svg" alt="Down arrow">
-                    </button>
-                    <div class="collapse" id="step5">
-                        <div class="card card-body">
-                            <ul>
-                                <li>
-                                    Prior to, during or after Building Regulations approval has been granted, the
-                                    detailed working drawings for the project can be produce including all structural
-                                    drawings.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#step6"
-                        aria-expanded="false" aria-controls="step6">
-                        <span>Step 6</span>
-                        <span>Tender process & Contract administration</span>
-                        <img src="../assets/img/chevron-down.svg" alt="Down arrow">
-                    </button>
-                    <div class="collapse" id="step6">
-                        <div class="card card-body">
-                            <ul>
-                                <li>
-                                    Prepare documents from our construction team for a detailed quotation.
-                                </li>
-                                <li>
-                                    Following selection of your contractor, we will inspect the works on site, ensuring
-                                    that
-                                    they are undertaken to quality, to price, and to time.
-                                </li>
-                                <li>
-                                    At the end of the works obtain a certificate of completion from the local authority
-                                </li>
-                            </ul>
+                                Our surveyors are fully qualified in the providing these services so please contact us
+                                for
+                                any
+                                service needs.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 d-flex align-items-center justify-content-center">
-                    <img class="showcase" src="../assets/img/architectural/architectural.png" alt="">
-                </div>
-        </section>
+            </section>
 
-        <!-- <section id="notices" class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img class="showcase" src="https://source.unsplash.com/random/600x800" alt="">
-                </div>
-                <div class="col-md-6">
-                    <div class="small-service">
-                        <h1>Notices & Agreements</h1>
-                        <p class="muted">Bexcrest Homes also offers our clients with Party Wall Agreements, Schedule of
-                            Conditions, Building and Demolition Notices, and assisting with all Utility Connections;
-                            Water, Gas,
-                            Electricity and Cable.
+            <section id="contractor" class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1>Building Contractor</h1>
+                        <p class="muted">As a Main Building Contractor Bexcrest Homes can offer all or a portion of the
+                            following services to achieve client goals:</p>
 
-                            Our surveyors are fully qualified in the providing these services so please contact us for
-                            any
-                            service needs.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <button class="service-dropdown text-left mt-4" data-toggle="collapse"
+                            data-target="#demolition-collapse" aria-expanded="false"
+                            aria-controls="demolition-collapse">
+                            <span>Demolition</span>
+                            <img src="../assets/img/chevron-down.svg" alt="Down arrow">
+                        </button>
+                        <div class="collapse" id="demolition-collapse">
+                            <div class="card card-body">
+                                Together with our partners we have the capability to offer solutions for demolition
+                                needs.
+                                These
+                                can range from gaining the necessary notices and permissions from local authorities and
+                                performing part demolition as a part of an extension/redevelopment project, or complete
+                                site
+                                demolition for new build properties.
+                            </div>
+                        </div>
 
-        <section id="contractor" class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <h1>Building Contractor</h1>
-                    <p class="muted">As a Main Building Contractor Bexcrest Homes can offer all or a portion of the
-                        following services to achieve client goals:</p>
+                        <button class="service-dropdown text-left mt-4" data-toggle="collapse"
+                            data-target="#build-collapse" aria-expanded="false" aria-controls="build-collapse">
+                            <span>New Build</span>
+                            <img src="../assets/img/chevron-down.svg" alt="Down arrow">
+                        </button>
+                        <div class="collapse" id="build-collapse">
+                            <div class="card card-body">
+                                Bexcrest Homes has proven capability to deliver new build residential projects. Together
+                                with
+                                the client we have meticulously worked together to achieve exactly what was envisaged.
+                                Our
+                                architects offered various design options relating to the clients needs and visions and
+                                gained
+                                planning approval from local authorities. Once construction could start our Project
+                                Managers
+                                assist with all aspects of the build ensure issues were resolved, progress was
+                                maintained
+                                and
+                                the budget adhered to in order to achieve our clients dreams.
+                                <ul>
+                                    <li>Thornhill Road (2 4 bedroom semi detached)</li>
+                                    <li>Back Lane (2 4 bedroom detached)</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                    <button class="service-dropdown text-left mt-4" data-toggle="collapse"
-                        data-target="#demolition-collapse" aria-expanded="false" aria-controls="demolition-collapse">
-                        <span>Demolition</span>
-                        <img src="../assets/img/chevron-down.svg" alt="Down arrow">
-                    </button>
-                    <div class="collapse" id="demolition-collapse">
-                        <div class="card card-body">
-                            Together with our partners we have the capability to offer solutions for demolition needs.
-                            These
-                            can range from gaining the necessary notices and permissions from local authorities and
-                            performing part demolition as a part of an extension/redevelopment project, or complete site
-                            demolition for new build properties.
+                        <button class="service-dropdown text-left mt-4" data-toggle="collapse"
+                            data-target="#extensions-collapse" aria-expanded="false"
+                            aria-controls="extensions-collapse">
+                            <span>Extensions</span>
+                            <img src="../assets/img/chevron-down.svg" alt="Down arrow">
+                        </button>
+                        <div class="collapse" id="extensions-collapse">
+                            <div class="card card-body">
+                                Working together with clients to achieve the best end goal, Bexcrest has completed
+                                several
+                                single storey extensions and double storey side extensions.
+                            </div>
+                        </div>
+
+                        <button class="service-dropdown text-left mt-4" data-toggle="collapse"
+                            data-target="#conversion-collapse" aria-expanded="false"
+                            aria-controls="conversion-collapse">
+                            <span>Conversion</span>
+                            <img src="../assets/img/chevron-down.svg" alt="Down arrow">
+                        </button>
+                        <div class="collapse" id="conversion-collapse">
+                            <div class="card card-body">
+                                Derelict and or redundant buildings are often prime premises to convert into commercial
+                                or
+                                residential spaces. Bexcrest Homes has worked with clients to convert derelict garages
+                                into
+                                commercial offices and residential flats, and old conservatories into integral
+                                extensions to
+                                the
+                                existing property.
+                            </div>
+                        </div>
+
+                        <button class="service-dropdown text-left mt-4" data-toggle="collapse"
+                            data-target="#maintenance-collapse" aria-expanded="false"
+                            aria-controls="maintenance-collapse">
+                            <span>Refurbishment & Maintenance</span>
+                            <img src="../assets/img/chevron-down.svg" alt="Down arrow">
+                        </button>
+                        <div class="collapse" id="maintenance-collapse">
+                            <div class="card card-body">
+                                Bexcrest Homes is proud to have developed a reputation for delivering high quality
+                                refurbishments for our clients. Together a clear scope is agreed with realistic budgets
+                                and
+                                timescales set for completion of the project. Our structured approach addresses all
+                                needs
+                                and
+                                our results have been excellent. We carry out refurbishments by offering our
+                                architectural
+                                services to design the required changes or follow a set of drawings provided by the
+                                client.
+                                Either options results in the client being satisfied and the end goal reached.
+                            </div>
                         </div>
                     </div>
+                    <div class="col-lg-5">
+                        <img class="showcase" src="https://source.unsplash.com/random/600x800" alt="">
+                    </div>
+            </section>
 
-                    <button class="service-dropdown text-left mt-4" data-toggle="collapse" data-target="#build-collapse"
-                        aria-expanded="false" aria-controls="build-collapse">
-                        <span>New Build</span>
-                        <img src="../assets/img/chevron-down.svg" alt="Down arrow">
-                    </button>
-                    <div class="collapse" id="build-collapse">
-                        <div class="card card-body">
-                            Bexcrest Homes has proven capability to deliver new build residential projects. Together
-                            with
-                            the client we have meticulously worked together to achieve exactly what was envisaged. Our
-                            architects offered various design options relating to the clients needs and visions and
-                            gained
-                            planning approval from local authorities. Once construction could start our Project Managers
-                            assist with all aspects of the build ensure issues were resolved, progress was maintained
-                            and
-                            the budget adhered to in order to achieve our clients dreams.
-                            <ul>
-                                <li>Thornhill Road (2 4 bedroom semi detached)</li>
-                                <li>Back Lane (2 4 bedroom detached)</li>
-                            </ul>
+            <section id="pm" class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="small-service">
+                            <h1>Project Management</h1>
+                            <p class="muted">Bexcrest Homes offers a Project Managament service for an entire cycle,
+                                start
+                                to
+                                finish
+                                development process for clients who wish to design and develop, or extend or refurb a
+                                project.
+                                Our
+                                services can be offered for the entirety of a project or for any small component of a
+                                project.
+                                No
+                                job is too big or small.
+
+                                This project management services is for small to medium size property development
+                                projects
+                                for
+                                both
+                                commercial and residential sectors. Bexcrest Homes project managers have worked for
+                                clients
+                                for
+                                the
+                                past 10 years delivering project, ranging from commercial office fitouts to residential
+                                new
+                                build
+                                houses and refurbs.</p>
                         </div>
                     </div>
-
-                    <button class="service-dropdown text-left mt-4" data-toggle="collapse"
-                        data-target="#extensions-collapse" aria-expanded="false" aria-controls="extensions-collapse">
-                        <span>Extensions</span>
-                        <img src="../assets/img/chevron-down.svg" alt="Down arrow">
-                    </button>
-                    <div class="collapse" id="extensions-collapse">
-                        <div class="card card-body">
-                            Working together with clients to achieve the best end goal, Bexcrest has completed several
-                            single storey extensions and double storey side extensions.
-                        </div>
+                    <div class="col-lg-6">
+                        <img class="showcase" src="https://source.unsplash.com/random/600x1000" alt="">
                     </div>
+                </div>
+            </section>
 
-                    <button class="service-dropdown text-left mt-4" data-toggle="collapse"
-                        data-target="#conversion-collapse" aria-expanded="false" aria-controls="conversion-collapse">
-                        <span>Conversion</span>
-                        <img src="../assets/img/chevron-down.svg" alt="Down arrow">
-                    </button>
-                    <div class="collapse" id="conversion-collapse">
-                        <div class="card card-body">
-                            Derelict and or redundant buildings are often prime premises to convert into commercial or
-                            residential spaces. Bexcrest Homes has worked with clients to convert derelict garages into
-                            commercial offices and residential flats, and old conservatories into integral extensions to
-                            the
-                            existing property.
-                        </div>
+            <section id="landscaping" class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="showcase" src="https://source.unsplash.com/random/600x1000" alt="">
                     </div>
-
-                    <button class="service-dropdown text-left mt-4" data-toggle="collapse"
-                        data-target="#maintenance-collapse" aria-expanded="false" aria-controls="maintenance-collapse">
-                        <span>Refurbishment & Maintenance</span>
-                        <img src="../assets/img/chevron-down.svg" alt="Down arrow">
-                    </button>
-                    <div class="collapse" id="maintenance-collapse">
-                        <div class="card card-body">
-                            Bexcrest Homes is proud to have developed a reputation for delivering high quality
-                            refurbishments for our clients. Together a clear scope is agreed with realistic budgets and
-                            timescales set for completion of the project. Our structured approach addresses all needs
-                            and
-                            our results have been excellent. We carry out refurbishments by offering our architectural
-                            services to design the required changes or follow a set of drawings provided by the client.
-                            Either options results in the client being satisfied and the end goal reached.
+                    <div class="col-lg-6">
+                        <div class="small-service">
+                            <h1>Landscaping Services</h1>
+                            <p class="muted">Bexcrest Homes also offers Landscape gardening services which will ensure
+                                all
+                                the clients soft and hard landscaping needs are met. We are able to help develop design
+                                and
+                                also follow guidelines.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <img class="showcase" src="https://source.unsplash.com/random/600x800" alt="">
-                </div>
-        </section>
+            </section>
 
-        <section id="pm" class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="small-service">
-                        <h1>Project Management</h1>
-                        <p class="muted">Bexcrest Homes offers a Project Managament service for an entire cycle, start
-                            to
-                            finish
-                            development process for clients who wish to design and develop, or extend or refurb a
-                            project.
-                            Our
-                            services can be offered for the entirety of a project or for any small component of a
-                            project.
-                            No
-                            job is too big or small.
+        </div>
 
-                            This project management services is for small to medium size property development projects
-                            for
-                            both
-                            commercial and residential sectors. Bexcrest Homes project managers have worked for clients
-                            for
-                            the
-                            past 10 years delivering project, ranging from commercial office fitouts to residential new
-                            build
-                            houses and refurbs.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img class="showcase" src="https://source.unsplash.com/random/600x1000" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section id="landscaping" class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img class="showcase" src="https://source.unsplash.com/random/600x1000" alt="">
-                </div>
-                <div class="col-md-6">
-                    <div class="small-service">
-                        <h1>Landscaping Services</h1>
-                        <p class="muted">Bexcrest Homes also offers Landscape gardening services which will ensure all
-                            the clients soft and hard landscaping needs are met. We are able to help develop design and
-                            also follow guidelines.</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -363,6 +408,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="../assets/js/bexcrest.js"></script>
     <script src="../assets/js/scroller.js"></script>
     <script src="../assets/js/services.js"></script>
