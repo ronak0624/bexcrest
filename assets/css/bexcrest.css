@@ -382,7 +382,11 @@ button.service-dropdown img {
     .collapsing {
         font-size: 0.8rem;
     }
-    /* .service-dropdown span:nth-child(1) {
-        margin-right: 1rem;
-    } */
+}
+
+
+@media (max-height: 768px) {
+    .services .headers {
+        margin-top: 5rem;
+    }
 }
