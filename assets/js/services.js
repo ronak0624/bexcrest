@@ -1,3 +1,16 @@
+$(document).on("show.bs.collapse", function(e) {
+    console.log(e.target.id)
+    let target = e.target.id
+    let siblingSelector = "button[data-target='#" + target + "']"
+    $(siblingSelector).children("img").attr("src", "../../assets/img/chevron-up.svg")
+})
+
+$(document).on("hide.bs.collapse", function(e) {
+    let target = e.target.id
+    let siblingSelector = "button[data-target='#" + target + "']"
+    $(siblingSelector).children("img").attr("src", "../../assets/img/chevron-down.svg")
+})
+
 $('.headers').slick({
     arrows: true,
     // centerMode: true,
@@ -25,6 +38,8 @@ $('.headers').slick({
       ]
 });
 
+
+
 $('.content').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -34,3 +49,4 @@ $('.content').slick({
     dots: true,
     focusOnSelect: true
 });
+
