@@ -21,7 +21,7 @@
 
 <body>
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="../index.html">
             <img src="../assets/img/bexcrest-navbar.svg">
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
@@ -39,19 +39,8 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="../index.html">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <div class="btn-group">
-                        <a class="nav-link" href="./services.html">Services</a>
-                        <a class="dropdown-toggle dropdown-toggle-split nav-link pl-0" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"></a>
-                        <span class="sr-only">Toggle dropdown</span>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="./services.html#arch">Architectural Services</a>
-                            <a class="dropdown-item" href="./services.html#pm">Project Management Serivces</a>
-                            <a class="dropdown-item" href="./services.html#contractor">Building Contractor</a>
-                            <a class="dropdown-item" href="./services.html#notices">Notices & Agreements</a>
-                        </div>
-                    </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./services.html">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./portfolio.html">Case Studies</a>
@@ -75,7 +64,7 @@
             <span class="text-center">Landscaping Services</span>
         </div>
         <div class="content">
-            <section id="arch" class="container">
+            <section data-section-active="true" id="arch" class="container">
                 <div class="row py-3 header-carousel">
                     <h1 class="mx-auto text-center">Architectural Services</h1>
                 </div>
@@ -205,7 +194,7 @@
                     </div>
             </section>
 
-            <section id="notices" class="container">
+            <section data-section-active="false" id="notices" class="container">
                 <div class="row py-3 header-carousel">
                     <h1 class="mx-auto text-center">Notices & Agreements</h1>
                 </div>
@@ -230,7 +219,7 @@
                 </div>
             </section>
 
-            <section id="contractor" class="container">
+            <section data-section-active="false" id="contractor" class="container">
                 <div class="row py-3 header-carousel">
                     <h1 class="mx-auto text-center">Building Contractor</h1>
                 </div>
@@ -344,7 +333,7 @@
                 </div>
             </section>
 
-            <section id="pm" class="container">
+            <section data-section-active="false" id="pm" class="container">
                 <div class="row py-3 header-carousel">
                     <h1 class="mx-auto text-center">Project Management</h1>
                 </div>
@@ -383,7 +372,7 @@
                 </div>
             </section>
 
-            <section id="landscaping" class="container">
+            <section data-section-active="false" id="landscaping" class="container">
                 <div class="row py-3 header-carousel">
                     <h1 class="mx-auto text-center">Landscaping Services</h1>
                 </div>
@@ -420,7 +409,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="../assets/js/bexcrest.js"></script>
-    <script src="../assets/js/scroller.js"></script>
     <script src="../assets/js/services.js"></script>
 </body>
 
