@@ -284,20 +284,6 @@ button.service-dropdown img {
     width: 100%;
 }
 
-/* .services .header-carousel span:hover, 
-.services .header-carousel h1:hover{
-    cursor: pointer;
-} */
-
-/* .services .small-service {
-    margin-top: 50%;
-}
-
-.services img.showcase {
-    vertical-align: middle;
-    width: 100%;
-} */
-
 .portfolio .card {
     background-color: var(--primary-color);
     border: none;
