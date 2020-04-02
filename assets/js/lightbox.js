@@ -1,4 +1,4 @@
-$(".carousel-item").on("click", function() {
+$(".lightbox").on("click", function() {
     let image = $(this).children("img").attr("src");
     console.log(image)
     openLightbox(image);
