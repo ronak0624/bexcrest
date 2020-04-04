@@ -163,14 +163,21 @@ a:hover {
 
 
 /* Contact Page */
-.form-control:focus {
-    outline: none;
-}
 
-.contact-form {
-    max-width: 500px;
+.contact .row {
     margin-top: 50%;
     transform: translateY(-50%);
+}
+
+@media (max-width: 992px){
+    .contact .row {
+        margin-top: 15vh;
+        transform: none;
+    }
+}
+
+.form-control:focus {
+    outline: none;
 }
 
 .contact-form h1 {
