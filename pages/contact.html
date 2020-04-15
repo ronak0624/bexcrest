@@ -52,8 +52,8 @@
     <div class="container contact">
         <div class="row">
             <div class="col-lg-6">
-                <div class="contact-form mx-auto">
-
+                <form method="post" name="contactform" action="contact.php" class="contact-form mx-auto">
+ 
                     <h1>Contact Us</h1>
                     <h5>Bexcrest Homes</h5>
                     
@@ -116,9 +116,9 @@
                     <label class="sr-only" for="contactMessage">Message</label>
                     <textarea name="message" name="message" id="contactMessage" class="w-100 mb-4" rows="5"
                         placeholder="Message..."></textarea>
-                    <button class="btn btn-primary w-100" onclick="submitContact()" type="submit">Submit</button>
+                    <button class="btn btn-primary w-100" type="submit">Submit</button>
 
-                </div>
+                </form>
             </div>
             <div class="col-lg-6 d-flex align-items-center justify-content-center w-100 my-4">
                 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gUShCXDtgtqaVcxfPY1CRyfaa9H2f_V0" width="640"
