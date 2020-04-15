@@ -5,10 +5,18 @@ function submitContact() {
     body.phonenumber = $("#phonenumber").val()
     body.address = $("#address").val()
     body.message = $("#contactMessage").val()
-    if(body.email == "" || body.phonenumber == "") {
-        $(".form-valid").removeClass("d-none")
-    } else {
-        console.log(body);
+    if(body.email == "" ){
+        $("#email_valid").removeClass("d-none");
+    } 
+    if(body.phonenumber == "") {
+        $("#phone_valid").removeClass("d-none");
+    }
+    if(body.phonenumber != "" && body.email != "") {
+        $.ajax({
+            type: "POST",
+            url: "https://www.bexcresthomes.co.uk/script/contact.php",
+            data: body
+          });
     }
 }
 
