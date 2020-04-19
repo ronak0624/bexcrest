@@ -198,13 +198,13 @@ const urls = {
     "avenue": [
       {
         "src": "../assets/img/portfolio/avenue/AG1.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/avenue/AG2.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/avenue/AG3.jpg",
@@ -223,87 +223,87 @@ const urls = {
       },
       {
         "src": "../assets/img/portfolio/avenue/AG6.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/avenue/AG7.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/avenue/AG8.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       }
     ],
     "anderson": [
       {
         "src": "../assets/img/portfolio/anderson/AD%201.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/anderson/AD%202.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/anderson/AD%203.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/anderson/AD%204.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/anderson/AD%205.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/anderson/AD%206.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/anderson/AD%207.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/anderson/AD%208.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       },
       {
         "src": "../assets/img/portfolio/anderson/AD%209.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 900,
+        "h": 1200
       }
     ],
     "rye": [
       {
         "src": "../assets/img/portfolio/rye/1.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 1000,
+        "h": 666
       },
       {
         "src": "../assets/img/portfolio/rye/2.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 1000,
+        "h": 666
       },
       {
         "src": "../assets/img/portfolio/rye/3.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 1000,
+        "h": 666
       },
       {
         "src": "../assets/img/portfolio/rye/4.jpg",
-        "w": 1200,
-        "h": 900
+        "w": 1000,
+        "h": 666
       }
     ],
     "upcoming": [

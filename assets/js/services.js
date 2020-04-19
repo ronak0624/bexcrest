@@ -38,8 +38,6 @@ $('.headers').slick({
       ]
 });
 
-
-
 $('.content').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -47,6 +45,7 @@ $('.content').slick({
     infinite: false,
     arrows: false,
     dots: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    appendDots: '.carousel-dots'
 });
 
