@@ -3,11 +3,10 @@
 
 <head>
     <title>Contact</title>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -53,11 +52,11 @@
     <div class="container contact">
         <div class="row">
             <div class="col-lg-6">
-                <div class="contact-form mx-auto">
-
+                <form method="post" name="contactform" action="contact.php" class="contact-form mx-auto">
+ 
                     <h1>Contact Us</h1>
                     <h5>Bexcrest Homes</h5>
-                    <!-- Which number is what?-->
+                    
                     <h5>
                         <span>
                             <i class="fa fa-phone" aria-hidden="true"></i>
@@ -78,7 +77,7 @@
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <input type="text" class="form-control" id="name" placeholder="Name">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Name">
                     </div>
 
                     <label class="sr-only" for="email">E-Mail</label>
@@ -88,9 +87,9 @@
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <input type="text" class="form-control" id="email" placeholder="E-Mail">
+                        <input type="text" name="email" class="form-control" id="email" placeholder="E-Mail">
                     </div>
-                    <span class="text-danger form-valid d-none">E-Mail required</span>
+                    <span id="email_valid" class="text-danger d-none">E-Mail required</span>
 
                     <label class="sr-only" for="phonenumber">Phone Number</label>
                     <div class="input-group mt-3">
@@ -99,9 +98,10 @@
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number">
+                        <input type="text" name="phone" class="form-control" id="phonenumber"
+                            placeholder="Phone Number">
                     </div>
-                    <span class="text-danger form-valid d-none">Phone Number required</span>
+                    <span id="phone_valid" class="text-danger d-none">Phone Number required</span>
 
                     <label class="sr-only" for="address">Address</label>
                     <div class="input-group mt-3">
@@ -110,15 +110,15 @@
                                 <i class="fa fa-home" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <input type="text" class="form-control" id="address" placeholder="Address">
+                        <input type="text" name="address" class="form-control" id="address" placeholder="Address">
                     </div>
 
                     <label class="sr-only" for="contactMessage">Message</label>
-                    <textarea name="message" id="contactMessage" class="w-100 mb-4" rows="5"
+                    <textarea name="message" name="message" id="contactMessage" class="w-100 mb-4" rows="5"
                         placeholder="Message..."></textarea>
-                    <button class="btn btn-primary w-100" onclick="submitContact()" type="submit">Submit</button>
+                    <button class="btn btn-primary w-100" type="submit">Submit</button>
 
-                </div>
+                </form>
             </div>
             <div class="col-lg-6 d-flex align-items-center justify-content-center w-100 my-4">
                 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gUShCXDtgtqaVcxfPY1CRyfaa9H2f_V0" width="640"
@@ -126,11 +126,9 @@
             </div>
         </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
